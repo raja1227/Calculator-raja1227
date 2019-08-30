@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Calculator</title>
+<link rel ="icon" type="image/png" href="ca.png">
+<style>
+input{
+width:50px;
+height:40px;
+border-radius:10%;
+}
+#blank{
+width:208px;
+height:40px;
+}
+
+#half{
+width:208px;
+}
+
+#cal{
+margin-top:200px;
+}
+body{
+background-image:url("bk.jpg");
+margin:0;
+padding:0;
+background-size:cover;
+background-position:center;
+font-family:sans-serif;}
+
+#form{
+background-color:white;
+width:220px;
+}
+</style>
+</head>
+<body>
+<center>
+<div id="cal">
+<form id="form">
+<input type="text" name="ans" id="blank">
+
+<br>
+
+<input type="button" value="1" onclick ="form.ans.value += '1' ">
+<input type="button" value="2" onclick ="form.ans.value += '2' ">
+<input type="button" value="3" onclick ="form.ans.value += '3' ">
+<input type="button" value="+" onclick ="form.ans.value += '+' ">
+<BR>
+<input type="button" value="4" onclick ="form.ans.value += '4' ">
+<input type="button" value="5" onclick ="form.ans.value += '5' ">
+<input type="button" value="6" onclick ="form.ans.value += '6' ">
+<input type="button" value="-" onclick ="form.ans.value += '-' ">
+<br>
+<input type="button" value="7" onclick ="form.ans.value += '7' ">
+<input type="button" value="8" onclick ="form.ans.value += '8' ">
+<input type="button" value="9" onclick ="form.ans.value += '9' ">
+<input type="button" value="*" onclick ="form.ans.value += '*' ">
+<br>
+<input type="button" value="/" onclick ="form.ans.value += '/' ">
+<input type="button" value="0" onclick ="form.ans.value += '0' ">
+<input type="button" value="." onclick ="form.ans.value += '.' ">
+<input type="button" value="=" onclick ="form.ans.value = eval(form.ans.value) ">
+<br>
+
+
+<input type="button" value="clear" onclick ="form.ans.value = '' " id="half">
+
+</form>
+</div>
+</center>
+</body>
+</html>
